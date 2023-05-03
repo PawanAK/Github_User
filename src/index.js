@@ -13,11 +13,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Auth0Provider
-      domain={process.env.DOMAIN}
-      clientId={process.env.CLIENT_ID}
-      authorizationParams={{
-        redirect_uri: window.location.origin,
-      }}>
+      domain="dev-qrylyq8hfiwnfipj.us.auth0.com"
+      clientId="uvgK1TKjDI9kHTX3BMdjiMWZBdLHGpwD"
+      redirectUri={window.location.origin}>
       <GithubProvider>
         <App />
       </GithubProvider>
